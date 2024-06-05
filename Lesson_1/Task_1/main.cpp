@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    cout << "Rostislav" << endl;
+    cout << "Kashpurenko" << endl;
     return 0;
 }
