@@ -11,25 +11,25 @@ int main()
 
     cout << endl;
 
-    for (int a = 1; a <= height; a++)
+    for (int branch = 1; branch <= height; branch++)
     {
-        int stars = (a * 2) - 1;
+        int stars = (branch * 2) - 1;
 
-        int space = height - a + 1;
+        int space = height - branch + 1;
 
-        for (int b = 0; b < space; b++)
+        for (int snow = 0; snow < space; snow++)
             cout << " ";
 
-        for (int b = 0; b < stars; b++)
+        for (int snow = 0; snow < stars; snow++)
             cout << "*";
 
         cout << endl;
     }
 
-    for (int a = 0; a < 1; a++)
+    for (int branch = 0; branch < 1; branch++)
     {
 
-        for (int b = 0; b < height; b++)
+        for (int snow = 0; snow < height; snow++)
             cout << " ";
 
 
