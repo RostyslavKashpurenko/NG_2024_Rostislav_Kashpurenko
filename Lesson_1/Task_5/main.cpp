@@ -17,7 +17,7 @@ int main()
     cout << "Number 'c': ";
     cin >> Num2;
 
-    float Desc = pow(Num1, 2) - 4 * Num0 * Num2;
+    float Desc = pow(Num1, 2) - 4 * Num0 * (-1 * Num2);
     float x1 = (-Num1 + sqrt(Desc)) / (2 * Num0);
     float x2 = (-Num1 - sqrt(Desc)) / (2 * Num0);
     if (Desc < 0)
