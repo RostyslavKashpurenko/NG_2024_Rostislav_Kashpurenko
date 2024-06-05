@@ -1,20 +1,19 @@
 #include <iostream>
 #include <cmath>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    int Num0 = 0;
-    int Num1 = 0;
+    float Num0 = 0;
+    float Num1 = 0;
     int operation;
 
     cout << "Enter first number: ";
     cin >> Num0;
     cout << "Enter second number: ";
     cin >> Num1;
-cout << "Enter operation: 1-'+', 2-'-', 3-'*', 4-/, 5-'pow', 6-'sqrt' (first number)\n";
+    cout << "Enter operation: 1-'+', 2-'-', 3-'*', 4-/, 5-'pow', 6-'sqrt' (first number)\n";
     cin >> operation;
 
     switch(operation)
