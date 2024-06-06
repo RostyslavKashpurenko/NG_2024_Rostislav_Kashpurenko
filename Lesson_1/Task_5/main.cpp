@@ -20,26 +20,23 @@ int main()
     float Desc = pow(Num1, 2) - 4 * Num0 * (-1 * Num2);
     float x1 = (-Num1 + sqrt(Desc)) / (2 * Num0);
     float x2 = (-Num1 - sqrt(Desc)) / (2 * Num0);
-    if (Desc < 0)
-    {
 
-        cout << "No solution..." << endl;
-
-        return 0;
-    }
-    else
-    {
-        if (Desc == 0 )
+    if (Desc == 0 )
         {
             cout << "x1 , x2 = " << x1 << endl;
-            return 0;
-        }
-        else
-        {
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
+            exit(0);
 
-        return 0;
+            return 0;
+
         }
-    }
+    else if (Desc > 0)
+        {
+            cout << "x1 = " << x1 << endl;
+            cout << "x2 = " << x2 << endl;
+
+            return 0;
+
+        }
+
+    cout << "No solution..." << endl;
 }
