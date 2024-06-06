@@ -34,8 +34,7 @@ int main()
         cout << pow(Num0,Num1);
         break;
     case 6:
-        cout <<sqrt(Num0);
+        cout << sqrt(Num0);
         break;
     }
-    return 0;
 }
