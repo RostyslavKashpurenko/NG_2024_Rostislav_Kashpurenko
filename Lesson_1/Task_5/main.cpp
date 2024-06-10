@@ -24,7 +24,6 @@ int main()
     if (Desc == 0 )
         {
             cout << "x1 , x2 = " << x1 << endl;
-            exit(0);
 
             return 0;
 
