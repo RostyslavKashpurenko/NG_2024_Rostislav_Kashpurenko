@@ -16,6 +16,8 @@ int main()
     cout << "Enter operation: 1-'+', 2-'-', 3-'*', 4-/, 5-'pow', 6-'sqrt' (first number)\n";
     cin >> operation;
 
+
+    cout << "Result: ";
     switch(operation)
     {
     case 1:
