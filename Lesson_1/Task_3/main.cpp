@@ -6,13 +6,14 @@ int main()
 {
 
     int money = 0;
+    bool condition = true;
 
     cout << "How much $ do you earn?" << endl;
     cin >> money;
 
     if (money < 1000)
     {
-        cout << "Work more!" << endl;
+        cout << "Work more";
 
     }
 
@@ -20,15 +21,18 @@ int main()
     {
         if (money > 999999)
         {
-            cout << "You are a millionare!!" << endl;
-            cout << "But you are great! " << endl;
-
-            return 0;
+            condition = false;
+            cout << "You are a millionare";
 
         }
-        cout << "Well done!" << endl;
+        if (condition == true) {
+        cout << "Well done";
+        }
     }
 
-    cout << "But you are great! " << endl;
 
+
+    cout << ", but you are great! " << endl;
+
+    return 0;
 }
