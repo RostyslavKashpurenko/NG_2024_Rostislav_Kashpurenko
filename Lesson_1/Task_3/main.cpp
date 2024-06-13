@@ -2,37 +2,30 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
 
-    int money = 0;
-    bool condition = true;
+    double earnings;
+    cout << "How much do you earn? ";
+    cin >> earnings;
 
-    cout << "How much $ do you earn?" << endl;
-    cin >> money;
 
-    if (money < 1000)
-    {
-        cout << "Work more";
+    if (earnings < 1000) {
 
-    }
-
-    if (money > 999)
-    {
-        if (money > 999999)
-        {
-            condition = false;
-            cout << "You are a millionare";
-
-        }
-        if (condition == true) {
-        cout << "Well done";
-        }
+        cout << "Work more" << endl;
     }
 
 
+    if (earnings > 999) {
 
-    cout << ", but you are great! " << endl;
+        if (earnings > 999999) {
+            cout << "You are millionaire!" << endl;
+        }
 
+        if (earnings < 1000000) {
+            cout << "You work good!" << endl;
+        }
+    }
+
+    cout << "But you are great!" << endl;
     return 0;
 }
