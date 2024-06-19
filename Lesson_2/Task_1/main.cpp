@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 const int NUM_ACCOUNTS = 10;
 
 void deposit(int accounts[], int acc_num, int amount) {
@@ -7,7 +9,7 @@ void deposit(int accounts[], int acc_num, int amount) {
 }
 
 void withdraw(int accounts[], int acc_num, int amount) {
-    accounts[acc_num] -= amount;
+    accounts[acc_num] -= amount;                              //writing withdrawal operation
 }
 
 int main() {
@@ -16,14 +18,14 @@ int main() {
     while (true) {
         int acc_num, choice, amount;
 
-        std::cout << "Enter account number (0-9): ";
-        std::cin >> acc_num;
+        cout << "Enter account number (0-9): ";
+        cin >> acc_num;
 
-        std::cout << "Enter 1 to deposit, 2 to withdraw: ";
-        std::cin >> choice;
+        cout << "Enter 1 to deposit, 2 to withdraw: ";
+        cin >> choice;
 
-        std::cout << "Enter amount: ";
-        std::cin >> amount;
+        cout << "Enter amount: ";
+        cin >> amount;
 
         if (choice == 1) {
             deposit(accounts, acc_num, amount);
@@ -31,25 +33,25 @@ int main() {
             withdraw(accounts, acc_num, amount);
         }
 
-        std::cout << "Account balances:\n";
-        for (int i = 0; i < NUM_ACCOUNTS; ++i) {
-            std::cout << "Account " << i << ": $" << accounts[i] << std::endl;
+        cout << "Account balances:\n";
+        for (int value = 0; value < NUM_ACCOUNTS; ++value) {
+            cout << "Account " << value << ": $" << accounts[value] << endl;
         }
 
         int max = accounts[0];
         int min = accounts[0];
 
-        for (int i = 1; i < NUM_ACCOUNTS; ++i) {
-            if (accounts[i] > max) {
-                max = accounts[i];
+        for (int value = 1; value < NUM_ACCOUNTS; ++value) {
+            if (accounts[value] > max) {
+                max = accounts[value];
             }
-            if (accounts[i] < min) {
-                min = accounts[i];
+            if (accounts[value] < min) {
+                min = accounts[value];
             }
         }
 
-        std::cout << "Maximum balance: $" << max << std::endl;
-        std::cout << "Minimum balance: $" << min << std::endl;
+        cout << "Maximum balance: $" << max << endl;
+        cout << "Minimum balance: $" << min << endl;
     }
 
     return 0;
