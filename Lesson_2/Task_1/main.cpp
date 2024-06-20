@@ -4,13 +4,6 @@ using namespace std;
 
 const int NUM_ACCOUNTS = 10;
 
-void deposit(int accounts[], int acc_num, int amount) {
-    accounts[acc_num] += amount;
-}
-
-void withdraw(int accounts[], int acc_num, int amount) {
-    accounts[acc_num] -= amount;                              //writing withdrawal operation
-}
 
 int main() {
     int accounts[NUM_ACCOUNTS] = {0};
@@ -28,9 +21,16 @@ int main() {
         cin >> amount;
 
         if (choice == 1) {
-            deposit(accounts, acc_num, amount);
-        } else if (choice == 2) {
-            withdraw(accounts, acc_num, amount);
+            accounts[acc_num] += amount;
+        }
+        if (choice == 2) {
+            if (accounts[acc_num] >= amount) {
+            accounts[acc_num] -= amount;
+            }
+            else
+            {
+            cout << "Not enough funds" << endl;
+            }
         }
 
         cout << "Account balances:\n";
